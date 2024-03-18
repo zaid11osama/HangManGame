@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Cairo:slnt,wght@-11..11,200..1000&family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <div class="game-name">Hangman Game</div>
+            <div class="category">
+                word From : <span></span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman-draw">
+                <div class="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters">
+
+            </div>
+        </div>
+        <hr>
+        <div class="letters-guess"><!-- <span>a</span> --></div>
+    </div>
+    <audio id="success" src="./audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="./audio/fail.mp3" preload="auto"></audio>
+    <audio id="winGame" src="./audio/winGame.mp3" preload="auto"></audio>
+    <audio id="loseGame" src="./audio/loseGame.mp3" preload="auto"></audio>
+    <script src="./main.js"> </script>
+</body>
+</html>
